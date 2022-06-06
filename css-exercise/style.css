@@ -1,0 +1,52 @@
+h2 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 10px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.bg-blue {
+    background-color: rgb(37, 248, 255);
+}
+.text-yellow {
+    color: rgb(245, 167, 0);
+}
+
+#h1Tag {
+    color: #fd55cd;
+}
+#h2Tag {
+    color: red;
+}
+#h3Tag {
+    color:rgb(37, 248, 255);
+}
+#h5Tag {
+    color: blueviolet;
+}
+.serviceDescription, .aboutUs {
+    color: #df0174;
+    background-color: #81daf5;
+}
+.background {
+    background-image: url("https://images.pexels.com/photos/2364633/pexels-photo-2364633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+img {
+    width: 500px;
+    height: 500px;
+}
+.flex {
+    display: flex;
+}
+.black-white {
+    filter: grayscale(100%);
+}
