@@ -2,11 +2,15 @@
 * {
     margin: 20px;
 }
-div, h1 {
-    padding: 10px;
+div, h1, p {
+    /* padding: 10px; */
     text-align: center;
 }
 img {
     height: 350px;
     width: 450px;
+}
+.icons {
+    height: 50px;
+    width: 50px;
 }
