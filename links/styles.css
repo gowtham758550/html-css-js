@@ -1,6 +1,6 @@
 
 * {
-    margin: 20px;
+    margin: 10px;
 }
 body {
     font-size: 62.5;
@@ -9,11 +9,11 @@ div, h1, p {
     /* padding: 10px; */
     text-align: center;
 }
-img {
+.banner {
     height: 350px;
     width: 450px;
 }
 .icons {
-    height: 5rem;
-    width: 5rem;
+    height: 2rem;
+    width: 2rem;
 }
