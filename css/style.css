@@ -1,3 +1,52 @@
 .text-center {
     text-align: center;
 }
+
+.pt-9 {
+    padding-top: 9px;
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1c95ff;
+    cursor: pointer;
+    color: rgb(239, 237, 237);
+}
+
+.bg-yellow {
+    background-color: #ffff00;
+}
+
+.bg-red {
+    background-color: #ff0000;
+}
+
+.bg-purple:hover {
+    background-color: #d8a0e8;
+}
+
+.bg-navy:hover {
+    background-color: #c8daf7;
+}
+
+.bg-sky-blue:hover {
+    background-color: #9df9ec;
+}
+
+.bg-violet:hover {
+    background-color: #b2a0e8;
+}
+
+.text-white {
+    color: #fff
+}
+
+.bg-blue {
+    background-color: #0000ff;
+}
+
+.bg-pink {
+    background-color: #ffc0cb;
+}

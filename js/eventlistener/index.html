@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Eventlisteners</title>
+
+    <style>
+        table, td, th {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="btn" id="bg-color-changer">Click to set paragraph background color</button>
+        <p>Javascript Exercise</p>
+        <p>Exercises</p>
+    </div>
+    <hr>
+    <div class="text-center">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Venue</th>
+                <th>Date</th>
+                <th>Cost</th>
+            </thead>
+            <tbody>
+                <tr class="bg-navy">
+                    <td>Wedding</td>
+                    <td>Bangalore</td>
+                    <td>23 March</td>
+                    <td>200</td>
+                </tr>
+                <tr class="bg-sky-blue">
+                    <td>Conference</td>
+                    <td>Chennai</td>
+                    <td>12 April</td>
+                    <td>1000</td>
+                </tr>
+                <tr class="bg-violet">
+                    <td>Party</td>
+                    <td>Coimbatore</td>
+                    <td>11 May</td>
+                    <td>11000</td>
+                </tr>
+                <tr class="bg-purple">
+                    <td>Casual Meeting</td>
+                    <td>Chennai</td>
+                    <td>21 May</td>
+                    <td>2000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+
+    <script>
+        document.getElementById("bg-color-changer").addEventListener("click", () => {
+            const paragraphs = document.getElementsByTagName("p");
+            paragraphs[0].classList = "bg-red text-white";
+            paragraphs[1].className = "bg-yellow"
+        })
+    </script>
+</body>
+</html>

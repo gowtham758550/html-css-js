@@ -13,6 +13,7 @@ function unlike() {
 
 const select = document.getElementById("select");
 const selectValue = document.getElementById("select-value");
+
 function getSelectValue() {
     selectValue.innerHTML = select.value;
     if (selectValue.innerHTML == "") {
@@ -22,4 +23,12 @@ function getSelectValue() {
         selectValue.innerHTML = `Selected value is ${select.value}`;
         selectValue.className = "text-green";
     }
+}
+
+const firstDiv = document.getElementById("first-div");
+const secondDiv = document.getElementById("second-div");
+
+function moveDiv() {
+    firstDiv.hidden = !firstDiv.hidden;
+    secondDiv.hidden = !firstDiv.hidden;
 }

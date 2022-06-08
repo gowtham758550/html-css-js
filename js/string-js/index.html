@@ -9,11 +9,24 @@
     <title>String JS</title>
 </head>
 <body>
+
+    <div class="text-center">
+        <textarea id="textarea-input" cols="30" rows="10"></textarea>
+        <br>
+        <button class="btn" onclick="getCamelCase()">Convert</button>
+        <p id="camel-case"></p>
+    </div>
+    <hr>
     
     <div class="text-center">
         <h2>Byte Converter</h2>
         <input type="text" id="string-input">
-        <button class="btn">Get Byte</button>
+        <button class="btn" onclick="convertByte()">Get Byte</button>
+        <br>
+        <p id="output"></p>
     </div>
+    <hr>
+
+    <script src="./main.js"></script>
 </body>
 </html>

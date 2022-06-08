@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Function Event Handling</title>
 </head>
 <body>
@@ -43,7 +44,21 @@
     </div>
     <hr>
 
+    <div class="text-center">
+        <h2>Moving Div Content</h2>
+        <div id="first-div" class="bg-blue text-white pt-9">
+            Welcome!
+        </div>
+        <div class="pt-9">
+            <button class="btn" onclick="moveDiv()">Click Me</button>
+        </div>
+        <div id="second-div" class="bg-pink pt-9" hidden>
+            Welcome!
+        </div>
+    </div>
+    <hr>
 
-    <script src="main.js"></script>
+
+    <script src="./main.js"></script>
 </body>
 </html>
