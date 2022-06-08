@@ -1,0 +1,44 @@
+/* body {
+    background-color: rgb(45, 42, 42);
+} */
+.text-center {
+    text-align: center;
+}
+.text-white {
+    color: #fff;
+}
+.text-red {
+    color: #ff0000
+}
+.text-green {
+    color: #008000;
+}
+/* .pt-3 {
+    padding: 30px;
+} */
+.btn {
+    padding: 8px;
+    border-radius: 3px;
+    background-color: rgb(0, 17, 255);
+    border: none;
+}
+.post {
+    text-align: center;
+}
+.post img {
+    border: 5px solid white;
+    border-radius: 4px;
+}
+.post input {
+    /* background-color: rgb(45, 42, 42); */
+    border: none;
+}
+#like-count {
+    padding: 2px;
+    /* background-color: white; */
+    /* color: white; */
+}
+.post input, svg {
+    height: 30px;
+    width: 30px;
+}
