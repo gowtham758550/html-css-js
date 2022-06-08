@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript DOM Manipulations</title>
+</head>
+<body>
+    <div>
+        <h2>DOM Manipulations</h2>
+        <p id="time"></p>
+        <button onclick="getTime()">Get time</button>
+    </div>
+    <hr>
+
+    <div>
+        <h1>With onclick function</h1>
+        <form action="#">
+            <input type="text" id="hyperlink-input" placeholder="Enter link to generate hyperlink" required>
+            <select id="hyperlink-option">
+                <option value="current">Current window</option>
+                <option value="new">New window</option>
+            </select>
+            <a href="#" id="hyperlink">Click here</a>
+            <p>
+                hyperlink Text - <span id="hyperlink-text"></span>
+            </p>
+            <br>
+            <button class="mt-10" type="submit" onclick="getHyperlink()">Generate hyperlink</button>
+        </form>
+    </div>
+    <hr>
+
+    <div>
+        <h1>With eventlisteners</h1>
+        <input type="text" id="hyperlink-input1" placeholder="Enter url to generate hyperlink">
+        <select id="hyperlink-option1">
+            <option value="current">Current window</option>
+            <option value="new">New window</option>
+        </select>
+        <a href="#" id="hyperlink1">Click here</a>
+        <p>
+            hyperlink Text - <span id="hyperlink-text1"></span>
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
