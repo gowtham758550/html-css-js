@@ -3,5 +3,9 @@ links - https://gowtham758550.github.io/html-css-js/links/index.html
 tables1 - https://gowtham758550.github.io/html-css-js/tables/
 tables2 - https://gowtham758550.github.io/html-css-js/tables/tables.html
 list and form - https://gowtham758550.github.io/html-css-js/list-forms/
+
 CSS
 https://gowtham758550.github.io/html-css-js/css-exercise/
+
+JS
+https://gowtham758550.github.io/html-css-js/js/

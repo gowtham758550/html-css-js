@@ -34,3 +34,42 @@ hyperlinkOption1.addEventListener("change", function (e) {
         hyperlink1.target = "";
     }
 })
+
+// var form = document.getElementById("form");
+// var fieldType = document.getElementById("field-type");
+
+// fieldType.addEventListener("change", (e) => {
+//     switch (e.target.value) {
+//         case "input":
+//             let inputType = document.createElement("select");
+//             let inputTypeOption = document.createElement("option");
+//             ["text", "password", "number"].forEach(type => {
+//                 inputTypeOption.text = type;
+//                 inputTypeOption.value = type
+//                 inputType.appendChild(inputTypeOption)
+//             });
+//             form.appendChild(inputType);
+//     }
+// });
+
+// function generateForm() {
+//     let input = document.createElement("input");
+//     input.placeholder = "Enter your name";
+//     form.appendChild(input);
+// }
+
+var search = document.getElementById("search");
+var paragraph = document.getElementById("paragraph");
+
+search.addEventListener("change", (e) => {
+    let searchText = e.target.value;
+    let paragraphArray = paragraph.innerHTML.split(" ");
+    paragraph.innerHTML = ""
+    paragraphArray.forEach((word) => {
+        if (word.toLowerCase() === searchText) {
+            paragraph.innerHTML += `<span class=\"bg-yellow\">${word}</span>`;
+        } else {
+            paragraph.innerHTML += word + " ";
+        }
+    })
+});
