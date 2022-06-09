@@ -9,10 +9,14 @@
 .btn {
     padding: 10px 20px 10px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #1c95ff;
     cursor: pointer;
     color: rgb(239, 237, 237);
+}
+
+.btn:active{
+    transform: translateY(5px);
 }
 
 .bg-yellow {
@@ -66,6 +70,35 @@
 }
 
 .flex-center {
-    align-items: center;
     justify-content: center;
 }
+
+.flex-right {
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.loader {
+    border: 6px solid #000;
+    border-top: 6px solid #fff; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.select {
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+}
+
