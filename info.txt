@@ -10,3 +10,9 @@ https://gowtham758550.github.io/html-css-js/css-exercise/
 JS
 https://gowtham758550.github.io/html-css-js/js/
 
+https://gowtham758550.github.io/html-css-js/js/exercise/ - 2
+https://gowtham758550.github.io/html-css-js/js/function-eventHandling/ - 3
+https://gowtham758550.github.io/html-css-js/js/string-js/ 1 + 1(partial)
+https://gowtham758550.github.io/html-css-js/js/control/ - 2
+https://gowtham758550.github.io/html-css-js/js/eventlistener/ - 2
+

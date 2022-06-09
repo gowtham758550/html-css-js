@@ -50,3 +50,22 @@
 .bg-pink {
     background-color: #ffc0cb;
 }
+
+.bg-white {
+    background-color: #fffff0;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
