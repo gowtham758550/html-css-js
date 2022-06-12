@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create | Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head> 
+
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand text-white" href="/">Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white rounded"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <!-- <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li> -->
+              <li class="nav-item pe-4">
+                <a class="nav-link text-white" href="./blogs.html">Read All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./create-blog.html">Create</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container py-3">
+        <div>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h2>Create Blog</h2>
+                </div>
+                <div>
+                    <button type="button" id="publish-button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="container container-md-fluid">
+                <div class="mb-3">
+                    <label for="blog-title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="blog-title" placeholder="Blog title">
+                </div>
+                <div class="mb-3">
+                    <label for="blog-description" class="form-label">Description</label>
+                    <textarea class="form-control" id="blog-description" rows="3"
+                        placeholder="Blog description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="blog-image" class="form-label">Select thumbnail</label>
+                    <input type="file" class="form-control" id="blog-image">
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">Select Category</label>
+                    <select class="form-select" id="category" aria-label="Select category">
+                        <option selected disabled>Select Category</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Android Development">Android Development</option>
+                        <option value="AI">AI</option>
+                        <option value="Azure">Azure</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="tags" class="form-label">Tags</label>
+                    <input type="text" id="tags" class="form-control" placeholder="Enter tags seperated by comma">
+                </div>
+                <div class="mb-3">
+                    <label for="blog-author" class="form-label">Author name</label>
+                    <input type="text" class="form-control" id="blog-author" placeholder="Author Name">
+                </div>
+            </div>
+            <hr>
+
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-block" id="undo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" />
+                        <path
+                            d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
+                    </svg>
+                </button>
+                <button class="btn" id="redo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                        <path
+                            d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="d-flex justify-content-start">
+                <div class="btn-group me-2" role="group" aria-label="Heading group" id="heading">
+                    <button type="button" id="h1" class="btn btn-outline-secondary">h1</button>
+                    <button type="button" id="h2" class="btn btn-outline-secondary">h2</button>
+                    <button type="button" id="h3" class="btn btn-outline-secondary">h3</button>
+                    <button type="button" id="h4" class="btn btn-outline-secondary">h4</button>
+                    <button type="button" id="h5" class="btn btn-outline-secondary">h5</button>
+                    <button type="button" id="h6" class="btn btn-outline-secondary">h6</button>
+                </div>
+                <div>
+                    <button id="p" class="btn btn-outline-secondary">p</button>
+                </div>
+            </div>
+            <div class="py-3">
+                <label for="image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-image-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z" />
+                    </svg>
+                </label>
+                <input type="file" id="image" size="50" hidden>
+            </div>
+            <hr>
+            <form action="#">
+                <div class="mb-3">
+                    <textarea class="form-control" id="blog-content" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <!-- <button class="btn btn-primary">Add</button> -->
+                </div>
+            </form>
+            <hr>
+
+            <div id="blog"></div>
+
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn" hidden>Show live toast</button>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast bg-danger" data-bs-delay="1000" role="alert" aria-live="assertive" aria-atomic="true" >
+            <div class="toast-header">
+                <!-- <img src="" class="rounded me-2" alt="..."> -->
+                <strong class="me-auto" id="toast-title"></strong>
+                <!-- <small>11 mins ago</small> -->
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body text-white" id="toast-content">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="../js/create-blog.js"></script>
+</body>
+
+</html>
